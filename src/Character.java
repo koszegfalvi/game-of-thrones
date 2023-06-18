@@ -2,6 +2,11 @@ public class Character {
     private String name;
     private final String placeOfBirth;
     private Gender gender;
+    public int population=0;
+    public void getWorldPopulation(int population){
+        population++;
+    }
+
 
     public String getName() {
         return name;
@@ -30,5 +35,6 @@ public class Character {
     public Character(String name, String placeOfBirth) {
         this.name = name;
         this.placeOfBirth = placeOfBirth;
+        getWorldPopulation(population);
     }
 }
