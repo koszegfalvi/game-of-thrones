@@ -1,4 +1,4 @@
-public class Character {
+public class Character implements Mortal{
     private String name;
     private final String placeOfBirth;
     private Gender gender;
@@ -36,5 +36,12 @@ public class Character {
         this.name = name;
         this.placeOfBirth = placeOfBirth;
         getWorldPopulation(population);
+    }
+
+    @Override
+    public void die(Character character) {
+
+
+        population--;
     }
 }

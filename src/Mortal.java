@@ -1,9 +1,9 @@
-public interface Mortal {
+public interface Mortal  {
 
 
-    public static void die(){
+    public  void die(Character character);
 
-}
+
 
     }
 
