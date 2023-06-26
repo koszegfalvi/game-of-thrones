@@ -1,3 +1,5 @@
+package character;
+
 public enum House {
     STARK("Közeleg a tél", "Winter is Coming", "wolf"),
     LANNISTER("Halld üvöltésem", "Hear Me Roar", "lion"),
@@ -11,10 +13,18 @@ public enum House {
 
         this.magyarJelMondat = magyarJelMondat;
         this.angolJelMondat = angolJelMondat;
+        this.sigil = sigil;
     }
 
+    public String getMagyarJelMondat() {
+        return magyarJelMondat;
+    }
 
-    private String magyarJelMondat;
-    private String angolJelMondat;
+    public String getAngolJelMondat() {
+        return angolJelMondat;
+    }
+
+    private final String magyarJelMondat;
+    private final String angolJelMondat;
     private String sigil;
 }
